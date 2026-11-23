@@ -1,0 +1,100 @@
+:root
+{
+    --swiper-navigation-size: 46px;
+}
+
+
+.swiper-button-next,
+.swiper-button-prev
+{
+    transition: .2s linear;
+
+    border-radius: 50%;
+    background: var(--bg_grey);
+
+    --swiper-navigation-top-offset: 50%;
+    --swiper-navigation-color: var(--dark_color);
+    --swiper-navigation-sides-offset: 0;
+
+
+    .icon
+    {
+        display: block;
+
+        width: 22px;
+        height: auto;
+
+        aspect-ratio: 1 / 1;
+
+
+        .swiper-button-next &
+        {
+            transform: rotate(180deg);
+        }
+    }
+
+
+    @media (hover: hover) and (pointer: fine)
+    {
+        &:hover
+        {
+            --swiper-navigation-color: var(--primary_color);
+        }
+    }
+}
+
+
+.swiper-pagination
+{
+    display: flex;
+    align-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: var(--inner_gap_xs);
+
+    pointer-events: none;
+
+    --swiper-pagination-bottom: 0;
+    --swiper-pagination-bullet-horizontal-gap: 0;
+    --swiper-pagination-bullet-inactive-color: var(--grey_color);
+    --swiper-pagination-bullet-hover-color: var(--primary_color);
+    --swiper-pagination-bullet-active-color: var(--primary_color);
+
+
+    .swiper-pagination-bullet
+    {
+        transition: background .2s linear;
+        pointer-events: auto;
+
+        --swiper-pagination-bullet-height: 12px;
+        --swiper-pagination-bullet-width: 12px;
+        --swiper-pagination-bullet-inactive-opacity: 1;
+        --swiper-pagination-bullet-border-radius: 50%;
+
+
+        @media (hover: hover) and (pointer: fine)
+        {
+            &:hover
+            {
+                background: var(--swiper-pagination-bullet-hover-color);
+            }
+        }
+
+
+        &.active
+        {
+            background: var(--swiper-pagination-bullet-active-color);
+        }
+    }
+}
+
+
+.swiper-scrollbar
+{
+    --swiper-scrollbar-border-radius: var(--border_radius);
+    --swiper-scrollbar-size: 6px;
+    --swiper-scrollbar-sides-offset: 0;
+    --swiper-scrollbar-bg-color: transparent;
+    --swiper-scrollbar-drag-bg-color: var(--grey_color);
+}

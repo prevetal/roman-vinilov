@@ -1,0 +1,191 @@
+@media print,
+(max-width: 1279px)
+{
+    /*-------------------
+        Global styles
+    -------------------*/
+    :root
+    {
+        --custom_scroll_width: 5px;
+        --custom_scroll_height: 5px;
+        --font_size_title_l: 50px;
+        --outside_gap_l: 120px;
+    }
+
+
+
+    /*----------------
+        Top banner
+    ----------------*/
+    .top_banner
+    {
+        .title
+        {
+            font-size: 26px;
+        }
+    }
+
+
+
+    /*------------
+        Header
+    ------------*/
+    header
+    {
+        margin-bottom: var(--block_padding);
+
+
+        .phone
+        {
+            margin-left: var(--block_padding);
+        }
+
+
+        .callback_btn
+        {
+            height: 44px;
+            margin-left: 60px;
+        }
+
+
+        .menu
+        {
+            gap: var(--block_padding_s);
+
+
+            .item
+            {
+                &:nth-child(2)
+                {
+                    margin-right: var(--block_padding);
+                }
+            }
+        }
+    }
+
+
+
+    /*-------------------
+        First section
+    -------------------*/
+    .first_section
+    {
+        .exp
+        {
+            width: 220px;
+
+            font-size: 13px;
+        }
+
+
+        .btn
+        {
+            &,
+            &.dark
+            {
+                width: calc(50% - var(--inner_gap) * .5);
+            }
+        }
+
+
+        .col
+        {
+            width: calc(50% - var(--inner_gap));
+        }
+
+
+        .messengers
+        {
+            .links
+            {
+                gap: var(--inner_gap_xs);
+            }
+        }
+
+
+        .guarantee
+        {
+            width: 180px;
+        }
+    }
+
+
+
+    /*--------------
+        Requests
+    --------------*/
+    .requests
+    {
+        .grid_row
+        {
+            --gap_x: var(--inner_gap_l);
+        }
+    }
+
+
+
+    /*-------------
+        AI chat
+    -------------*/
+    .ai_chat
+    {
+        .photo
+        {
+            margin-left: 0;
+        }
+    }
+
+
+
+    /*-----------------
+        How we work
+    -----------------*/
+    .how_we_work
+    {
+        .grid_row
+        {
+            --gap_x: var(--inner_gap_l);
+            --gap_y: var(--inner_gap_l);
+        }
+    }
+
+
+
+    /*-------------
+        Reasons
+    -------------*/
+    .reasons
+    {
+        .grid_row
+        {
+            --gap_x: var(--inner_gap_l);
+            --gap_y: var(--inner_gap_l);
+        }
+    }
+
+
+
+    /*-----------
+        About
+    -----------*/
+    .about
+    {
+        .facts
+        {
+            width: calc(50% - var(--inner_gap));
+        }
+    }
+
+
+
+    /*---------------
+        Education
+    ---------------*/
+    .education
+    {
+        .items
+        {
+            width: calc(50% - var(--inner_gap));
+        }
+    }
+}

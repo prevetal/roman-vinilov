@@ -1,0 +1,715 @@
+@media (max-width: 767px)
+{
+    /*-------------------
+        Global styles
+    -------------------*/
+    :root
+    {
+        --cont_padding: 20px;
+        --font_size_title_l: 35px;
+        --font_size_title: 25px;
+        --block_head_offset: 30px;
+        --outside_gap_l: 80px;
+        --outside_gap: 50px;
+    }
+
+
+
+    /*----------------
+        Block head
+    ----------------*/
+    .block_head
+    {
+        .desc
+        {
+            font-size: var(--font_size_l);
+        }
+    }
+
+
+
+    /*----------
+        Tabs
+    ----------*/
+    .tabs
+    {
+        align-items: center;
+        flex-direction: column;
+        gap: var(--inner_gap_xs);
+
+
+        .btn
+        {
+            min-width: 140px;
+        }
+    }
+
+
+
+    /*----------------
+        Pagination
+    ----------------*/
+    .pagination
+    {
+        gap: var(--inner_gap);
+
+        font-size: var(--font_size_s);
+
+
+        .icon
+        {
+            width: 16px;
+        }
+    }
+
+
+
+    /*----------------
+        Top banner
+    ----------------*/
+    .top_banner
+    {
+        .title
+        {
+            width: 147px;
+            margin-inline: 0;
+
+            font-size: var(--font_size_s);
+
+            text-align: left;
+        }
+
+
+        .btn
+        {
+            flex-shrink: 0;
+
+            width: 151px;
+
+            font-size: 13px;
+            letter-spacing: 1.956px;
+        }
+    }
+
+
+
+    /*------------
+        Header
+    ------------*/
+    header
+    {
+        width: 200px;
+        padding-block: var(--inner_gap_xs) var(--inner_gap);
+        padding-inline: var(--inner_gap);
+
+
+        .close_btn
+        {
+            top: var(--inner_gap_xs);
+        }
+
+
+        .city_btn
+        {
+            font-size: var(--font_size_s);
+        }
+
+
+        .menu
+        {
+            gap: var(--inner_gap_xs);
+
+            margin-top: var(--inner_gap);
+
+
+            .item
+            {
+                a
+                {
+                    font-size: var(--font_size_s);
+                }
+            }
+        }
+
+
+        .phone
+        {
+            margin-top: var(--inner_gap);
+
+            font-size: var(--font_size);
+        }
+
+
+        .callback_btn
+        {
+            width: 140px;
+            height: 36px;
+            padding-inline: var(--inner_gap_xs);
+
+            font-size: 12px;
+        }
+    }
+
+
+
+    /*-----------------
+        Mob. header
+    -----------------*/
+    .mob_header
+    {
+        margin-bottom: var(--inner_gap);
+
+
+        .logo
+        {
+            font-size: var(--font_size);
+            line-height: 120%;
+
+
+            img
+            {
+                width: 30px;
+                height: 32px;
+            }
+        }
+
+
+        .city_btn
+        {
+            display: none;
+        }
+    }
+
+
+
+    /*-------------------
+        First section
+    -------------------*/
+    .first_section
+    {
+        .exp
+        {
+            width: 152px;
+
+            font-size: 9px;
+        }
+
+
+        .sub_title
+        {
+            font-size: var(--font_size);
+        }
+
+
+        .desc
+        {
+            font-size: var(--font_size);
+        }
+
+
+        .btns
+        {
+            align-items: flex-start;
+            flex-direction: column;
+            gap: var(--inner_gap_l);
+        }
+
+
+        .image
+        {
+            border-radius: var(--border_radius_s);
+        }
+
+
+        .bottom
+        {
+            align-items: stretch;
+            flex-direction: column-reverse;
+            gap: var(--inner_gap_s);
+        }
+
+
+        .messengers
+        {
+            .label
+            {
+                font-size: 11px;
+            }
+        }
+
+
+        .guarantee
+        {
+            margin-left: auto;
+
+            font-size: 11px;
+        }
+    }
+
+
+
+    /*--------------
+        Requests
+    --------------*/
+    .requests
+    {
+        .grid_row
+        {
+            --items_per_line: 1;
+            --gap_y: var(--block_padding_s);
+        }
+
+
+        .slogan
+        {
+            font-size: var(--font_size_xl);
+        }
+    }
+
+
+
+    /*-----------
+        About
+    -----------*/
+    .about
+    {
+        .facts
+        {
+            font-size: var(--font_size);
+        }
+
+
+        .info
+        {
+            .name
+            {
+                font-size: 22px;
+            }
+
+
+            .post
+            {
+                font-size: var(--font_size_l);
+            }
+        }
+
+
+        .awards
+        {
+            font-size: var(--font_size_s);
+        }
+
+
+        .quote
+        {
+            padding-inline: var(--inner_gap);
+
+            font-size: var(--font_size_s);
+        }
+    }
+
+
+
+    /*---------------
+        Education
+    ---------------*/
+    .education
+    {
+        .btn
+        {
+            margin-top: 100px;
+        }
+    }
+
+
+
+    /*-------------------
+        Video reviews
+    -------------------*/
+    .video_reviews
+    {
+        .videos
+        {
+            --swiper-navigation-size: 30px;
+
+
+            .swiper
+            {
+                --slidesPerView: 1;
+            }
+        }
+    }
+
+
+
+    /*------------------
+        Center facts
+    ------------------*/
+    .center_facts
+    {
+        .list
+        {
+            font-size: var(--font_size);
+        }
+    }
+
+
+
+    /*--------------
+        Articles
+    --------------*/
+    .articles
+    {
+        .grid_row
+        {
+            --items_per_line: 1;
+            --gap_y: var(--block_padding_s);
+        }
+
+
+        .all_btn
+        {
+            height: 50px;
+        }
+    }
+
+
+
+    /*------------------
+        Fresh videos
+    ------------------*/
+    .fresh_videos
+    {
+        .swiper
+        {
+            --slidesPerView: 1;
+        }
+
+
+        .all_btn
+        {
+            width: 100%;
+        }
+    }
+
+
+
+    /*---------------
+        World map
+    ---------------*/
+    .world_map
+    {
+        .block_head
+        {
+            .desc
+            {
+                font-size: var(--font_size_l);
+            }
+        }
+
+
+        .map
+        {
+            margin-inline: calc(var(--cont_padding) * -1);
+        }
+    }
+
+
+
+    /*-------------
+        Mission
+    -------------*/
+    .mission
+    {
+        .image
+        {
+            margin-bottom: -67px;
+        }
+
+
+        .info
+        {
+            padding-block: 87px var(--inner_gap);
+            padding-inline: var(--inner_gap_xs);
+        }
+
+
+        .text
+        {
+            gap: var(--inner_gap);
+
+            font-size: var(--font_size);
+        }
+
+
+        .name
+        {
+            font-size: var(--font_size);
+        }
+    }
+
+
+
+    /*------------------
+        How we work
+    ------------------*/
+    .how_we_work
+    {
+        .grid_row
+        {
+            --items_per_line: 1;
+        }
+    }
+
+
+
+    /*-------------
+        Reasons
+    -------------*/
+    .reasons
+    {
+        .grid_row
+        {
+            --items_per_line: 1;
+        }
+    }
+
+
+
+    /*--------------
+        Schedule
+    --------------*/
+    .schedule
+    {
+        .event
+        {
+            padding-block: var(--block_padding_s);
+            padding-inline: var(--inner_gap_xs);
+
+
+            .type
+            {
+                font-size: var(--font_size);
+            }
+
+
+            .name
+            {
+                font-size: 22px;
+            }
+
+
+            .contacts
+            {
+                font-size: var(--font_size);
+            }
+
+
+            .bottom
+            {
+                align-items: center;
+                flex-direction: column;
+            }
+
+
+            .places
+            {
+                width: 100%;
+
+                font-size: var(--font_size_s);
+            }
+        }
+
+
+        .no_events
+        {
+            padding-block: var(--block_padding_s);
+
+            font-size: var(--font_size);
+        }
+    }
+
+
+
+    /*----------
+        Book
+    ----------*/
+    .book
+    {
+        .data
+        {
+            display: flex;
+            align-items: stretch;
+            flex-direction: column;
+            gap: var(--inner_gap);
+        }
+
+
+        .image
+        {
+            align-self: center;
+
+            width: 156px;
+        }
+
+
+        .desc
+        {
+            margin-top: 0;
+        }
+
+
+        .btn
+        {
+            align-self: center;
+
+            margin-top: var(--inner_gap_xs);
+        }
+
+
+        .secure
+        {
+            align-self: center;
+
+            margin-top: calc(var(--inner_gap_xs) - var(--inner_gap));
+
+            font-size: var(--font_size_s);
+        }
+    }
+
+
+
+    /*-----------
+        Media
+    -----------*/
+    .media
+    {
+        .block_head
+        {
+            .desc
+            {
+                font-size: var(--font_size_l);
+            }
+        }
+
+
+        .logo
+        {
+            padding-inline: var(--inner_gap);
+
+
+            img
+            {
+                max-height: 25px;
+            }
+        }
+    }
+
+
+
+    /*------------
+        Footer
+    ------------*/
+    footer
+    {
+        .cont
+        {
+            align-items: stretch;
+            flex-direction: column;
+            flex-wrap: nowrap;
+            gap: var(--block_padding_s);
+        }
+
+
+        .phone,
+        .site
+        {
+            width: 100%;
+            margin-bottom: 0;
+        }
+
+
+        .site
+        {
+            align-items: flex-start;
+
+            text-align: left;
+        }
+
+
+        .copyright
+        {
+            font-size: var(--font_size);
+        }
+
+
+        .age
+        {
+            font-size: var(--font_size_s);
+        }
+
+
+        .menu
+        {
+            align-items: flex-start;
+            flex-direction: column;
+            flex-wrap: nowrap;
+            gap: var(--inner_gap_xxs);
+
+            font-size: var(--font_size_s);
+        }
+    }
+
+
+
+    /*-----------
+        PopUp
+    -----------*/
+    .modal
+    {
+        .wrapper
+        {
+            padding-inline: var(--inner_gap_xs);
+        }
+
+
+        .modal_title
+        {
+            font-size: var(--font_size_xl);
+        }
+
+
+        .cities
+        {
+            button
+            {
+                font-size: var(--font_size);
+            }
+        }
+
+
+        .form
+        {
+            .input,
+            textarea
+            {
+                font-size: var(--font_size);
+            }
+        }
+
+
+        .checkbox
+        {
+            font-size: var(--font_size);
+        }
+
+
+        &.form_modal
+        {
+            .inner
+            {
+                padding-inline: var(--inner_gap_xs);
+            }
+        }
+    }
+}

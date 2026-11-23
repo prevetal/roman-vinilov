@@ -1,0 +1,23 @@
+/*-----------
+    Fonts
+-----------*/
+@font-face
+{
+    font-family: 'FuturaPT';
+    font-weight: normal;
+    font-style: normal;
+
+    font-display: swap;
+    src: url('../fonts/FuturaPT-Book.woff2') format('woff2');
+}
+
+
+@font-face
+{
+    font-family: 'FuturaPT';
+    font-weight: 500;
+    font-style: normal;
+
+    font-display: swap;
+    src: url('../fonts/FuturaPT-Demi.woff2') format('woff2');
+}
