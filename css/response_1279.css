@@ -188,4 +188,112 @@
             width: calc(50% - var(--inner_gap));
         }
     }
+
+
+
+    /*---------------
+        Page head
+    ---------------*/
+    .page_head
+    {
+        margin-top: calc(var(--inner_gap_xs) * -1);
+    }
+
+
+
+    /*--------------
+        Products
+    --------------*/
+    .products
+    {
+        .grid_row
+        {
+            --gap_x: var(--inner_gap);
+        }
+
+
+        .product
+        {
+            .name
+            {
+                font-size: 22px;
+            }
+
+
+            .info
+            {
+                font-size: var(--font_size_l);
+            }
+        }
+    }
+
+
+
+    /*----------
+        Team
+    ----------*/
+    .team
+    {
+        .grid_row
+        {
+            --gap_x: var(--inner_gap);
+        }
+
+
+        .person
+        {
+            .name
+            {
+                font-size: var(--font_size_title_xs);
+            }
+
+
+            .post
+            {
+                font-size: var(--font_size_l);
+            }
+        }
+    }
+
+
+
+    /*-------------------
+        Photo gallery
+    -------------------*/
+    .photo_gallery
+    {
+        .grid_row
+        {
+            --gap_x: var(--inner_gap);
+            --gap_y: var(--inner_gap);
+        }
+    }
+
+
+
+    /*-------------------
+        Contacts info
+    -------------------*/
+    .contacts_info
+    {
+        .list
+        {
+            gap: var(--inner_gap_l);
+
+            font-size: var(--font_size_l);
+        }
+    }
+
+
+
+    /*-------------------
+        About project
+    -------------------*/
+    .about_project
+    {
+        .form
+        {
+            padding: var(--block_padding_s);
+        }
+    }
 }

@@ -1,0 +1,534 @@
+<!DOCTYPE html>
+<html lang="ru">
+	<head>
+		<meta charset="utf-8">
+
+		<!-- Adapting the page for mobile devices -->
+		<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+
+		<!-- Prohibition of phone number recognition -->
+		<meta name="format-detection" content="telephone=no">
+
+		<!-- Page title -->
+		<title>Заголовок страницы</title>
+
+		<!-- Meta description -->
+		<meta name="description" content="">
+
+		<!-- Meta Keywords -->
+		<meta name="keywords" content="">
+
+		<!-- Site icon, size 32x32, transparency supported. Recommended format: .ico or .png -->
+		<link rel="shortcut icon" href="favicon.ico">
+
+		<!-- Changing the color of the mobile browser panel -->
+		<meta name="msapplication-TileColor" content="#333333">
+		<meta name="theme-color" content="#333333">
+
+		<!-- Preloading the main font -->
+		<link rel="preload" href="fonts/FuturaPT-Book.woff2" as="font" type="font/woff2" crossorigin>
+		<link rel="preload" href="fonts/FuturaPT-Demi.woff2" as="font" type="font/woff2" crossorigin>
+
+		<!-- Connecting style files -->
+		<link rel="stylesheet" href="css/reset.css">
+		<link rel="stylesheet" href="css/swiper-bundle.min.css">
+		<link rel="stylesheet" href="css/swiper.css">
+		<link rel="stylesheet" href="css/fancybox.css">
+		<link rel="stylesheet" href="css/styles.css">
+		<link rel="stylesheet" href="css/fonts.css">
+
+		<link rel="stylesheet" href="css/response_1279.css" media="print, (max-width: 1279px)">
+		<link rel="stylesheet" href="css/response_1023.css" media="print, (max-width: 1023px)">
+		<link rel="stylesheet" href="css/response_767.css" media="print, (max-width: 767px)">
+	</head>
+
+	<body>
+		<div class="wrap">
+			<div class="main">
+				<section class="top_banner">
+					<div class="cont">
+						<div class="title">Диагностика Вашей ситуации: узнай, что делать!</div>
+
+						<button class="btn">
+							<span>пройти тест!</span>
+						</button>
+					</div>
+				</section>
+
+				<header>
+					<button type="button" class="close_btn" aria-label="Закрыть меню">
+						<svg class="icon"><use href="images/sprite.svg#ic_close"></use></svg>
+					</button>
+
+					<div class="top">
+						<div class="cont">
+							<div class="logo">
+								<img src="images/logo.png" alt="">
+
+								<span>Центр романа<br> винилова</span>
+							</div>
+
+							<button type="button" class="city_btn" data-open-modal="city_modal">
+								<span>Выбери город</span>
+
+								<svg class="icon"><use xlink:href="images/sprite.svg#ic_arr_ver"></use></svg>
+							</button>
+
+							<div class="phone">
+								<a href="tel:+7 (983) 000 111 6">+7 (983) 000 111 6</a>
+							</div>
+
+							<button class="callback_btn">
+								<span>Перезвоните мне</span>
+
+								<svg class="icon"><use xlink:href="images/sprite.svg#ic_phone"></use></svg>
+							</button>
+						</div>
+					</div>
+
+					<div class="bottom">
+						<div class="cont">
+							<nav class="menu">
+								<div class="item">
+									<a href="/" class="primary">Консультация</a>
+								</div>
+
+								<div class="item">
+									<a href="/" class="primary">Premium доступ</a>
+								</div>
+
+								<div class="item">
+									<a href="/">Продукты</a>
+								</div>
+
+								<div class="item">
+									<a href="/">Обучение</a>
+								</div>
+
+								<div class="item">
+									<a href="/">Отзывы</a>
+								</div>
+
+								<div class="item">
+									<a href="/">Команда</a>
+								</div>
+
+								<div class="item">
+									<a href="/">Расписание</a>
+								</div>
+
+								<div class="item">
+									<a href="/">Материалы</a>
+								</div>
+
+								<div class="item">
+									<a href="/">Контакты</a>
+								</div>
+							</nav>
+						</div>
+					</div>
+				</header>
+
+
+				<section class="mob_header">
+					<div class="cont">
+						<div class="logo">
+							<img src="images/logo.png" alt="">
+
+							<span>Центр романа<br> винилова</span>
+						</div>
+
+						<button type="button" class="city_btn" data-open-modal="city_modal">
+							<span>Выбери город</span>
+
+							<svg class="icon"><use href="images/sprite.svg#ic_arr_ver"></use></svg>
+						</button>
+
+						<button type="button" class="mob_menu_btn" aria-label="Меню">
+							<span></span>
+						</button>
+					</div>
+				</section>
+
+
+				<section class="page_head">
+					<div class="cont">
+						<div class="breadcrumbs">
+							<a href="/">
+								<svg class="icon"><use href="images/sprite.svg#ic_home"></use></svg>
+
+								<span>Главная</span>
+							</a>
+
+							<svg class="sep"><use href="images/sprite.svg#ic_sep"></use></svg>
+
+							<span class="current">Команда</span>
+						</div>
+					</div>
+				</section>
+
+
+				<section class="quote block">
+					<div class="cont">
+						<picture class="image">
+							<img src="images/quote_img.jpg" alt="" decoding="async" fetchpriority="high" class="cover">
+						</picture>
+
+						<div class="data">
+							<div class="text">
+								<p>Успех — это не просто случайность. Это тяжёлый труд, настойчивость, терпение, выдержка, целеустремлённость и главное — любовь к тому, чем ты занимаешься</p>
+							</div>
+
+							<div class="author">Роман Винилов</div>
+						</div>
+					</div>
+				</section>
+
+
+				<section class="team block l_m">
+					<div class="cont">
+						<div class="block_head centered">
+							<h1 class="title">Команда проекта</h1>
+						</div>
+
+						<div class="experts">
+							<div class="expert">
+								<picture class="image">
+									<img src="images/team_expert_img1.jpg" alt="" loading="lazy" decoding="async" class="cover">
+								</picture>
+
+								<div class="info">
+									<div class="name">Роман Винилов</div>
+
+									<div class="post">основатель проекта, идеолог и главный психолог</div>
+
+									<div class="text">
+										<p>Идейный вдохновитель команды, мотиватор. Психолог с образованием и большим стажем работы в online и на живых консультациях.</p>
+
+										<p>С 2006 года ведёт групповое и индивидуальное обучение мужчин и женщин в таких сферах, как: личностное развитие, психологическое здоровье, решение психологических проблем, психология взаимоотношений, восстановление отношений. Психолог, который помогает от души!</p>
+									</div>
+
+									<div class="links">
+										<a href="/" target="_blank" rel="noopener nofollow">
+											<img src="images/ic_telegram.svg" alt="" loading="lazy" decoding="async" class="icon">
+										</a>
+
+										<a href="/" target="_blank" rel="noopener nofollow">
+											<img src="images/ic_vk.svg" alt="" loading="lazy" decoding="async" class="icon">
+										</a>
+
+										<a href="/" target="_blank" rel="noopener nofollow">
+											<img src="images/ic_youtube.svg" alt="" loading="lazy" decoding="async" class="icon">
+										</a>
+									</div>
+								</div>
+							</div>
+
+							<div class="expert">
+								<picture class="image">
+									<img src="images/team_expert_img2.jpg" alt="" loading="lazy" decoding="async" class="cover">
+								</picture>
+
+								<div class="info">
+									<div class="name">Александр Есенин</div>
+
+									<div class="post">психолог проекта по оперативной помощи</div>
+
+									<div class="text">
+										<p>Главное лицо проекта. Психолог с образованием и большим стажем работы. Член ассоциации когнитивно-поведенческой терапии. Проводит живое и online обучение мужчин и женщин.</p>
+
+										<p>Специализируется на оперативной помощи. Получить оперативную помощь по вашей проблеме вы всегда можете по нашему телефону <b><a href="tel:+79830001116">+7 (983) 000-111-6</a> (есть все мессенджеры)</b>. Александр ответит на все ваши вопросы, даст первые рекомендации по проблеме. Подробно расскажет, как наш проект сможет помочь в решении вашей проблемы. Мы даём гарантию, что сможем помочь. Либо мы просто не берёмся за работу.</p>
+
+										<p>Имеет возможность работать вместе с Романом Виниловым.</p>
+									</div>
+
+									<div class="links">
+										<a href="/" target="_blank" rel="noopener nofollow">
+											<img src="images/ic_telegram.svg" alt="" loading="lazy" decoding="async" class="icon">
+										</a>
+
+										<a href="/" target="_blank" rel="noopener nofollow">
+											<img src="images/ic_vk.svg" alt="" loading="lazy" decoding="async" class="icon">
+										</a>
+									</div>
+								</div>
+							</div>
+						</div>
+
+						<div class="grid_row">
+							<div class="person">
+								<picture class="image">
+									<img src="images/team_member_img1.jpg" alt="" loading="lazy" decoding="async" class="cover">
+								</picture>
+
+								<div class="info">
+									<div class="name">Павел Куц</div>
+
+									<div class="post">Представитель проекта в Украине /<br> Психолог</div>
+								</div>
+							</div>
+
+							<div class="person">
+								<picture class="image">
+									<img src="images/team_member_img2.jpg" alt="" loading="lazy" decoding="async" class="cover">
+								</picture>
+
+								<div class="info">
+									<div class="name">Илья Фельдманас</div>
+
+									<div class="post">Представитель проекта в Европе /<br> Консультирование на немецком языке</div>
+								</div>
+							</div>
+
+							<div class="person">
+								<picture class="image">
+									<img src="images/team_member_img3.jpg" alt="" loading="lazy" decoding="async" class="cover">
+								</picture>
+
+								<div class="info">
+									<div class="name">Виктор МакГрегор</div>
+
+									<div class="post">Представитель проекта в США /<br> Коуч</div>
+								</div>
+							</div>
+
+							<div class="person">
+								<picture class="image">
+									<img src="images/team_member_img4.jpg" alt="" loading="lazy" decoding="async" class="cover">
+								</picture>
+
+								<div class="info">
+									<div class="name">Константин Малахов</div>
+
+									<div class="post">Эффективность и развитие /<br> Поддержка проекта</div>
+								</div>
+							</div>
+
+							<div class="person">
+								<picture class="image">
+									<img src="images/team_member_img5.jpg" alt="" loading="lazy" decoding="async" class="cover">
+								</picture>
+
+								<div class="info">
+									<div class="name">Елизавета Цветкова</div>
+
+									<div class="post">Мужской и женский стилист,<br> профессиональный шоппер</div>
+								</div>
+							</div>
+
+							<div class="person">
+								<picture class="image">
+									<img src="images/team_member_img6.jpg" alt="" loading="lazy" decoding="async" class="cover">
+								</picture>
+
+								<div class="info">
+									<div class="name">Саша Magic Star</div>
+
+									<div class="post">Организация и поддержка,<br> основной саппорт проекта</div>
+								</div>
+							</div>
+						</div>
+					</div>
+				</section>
+
+
+				<section class="photo_gallery block l_m">
+					<div class="cont">
+						<div class="grid_row">
+							<a href="images/photo_gallery_img1_big.jpg" class="photo" data-fancybox="photo_gallery">
+								<img src="images/photo_gallery_img1.jpg" alt="" loading="lazy" decoding="async" class="cover">
+							</a>
+
+							<a href="images/photo_gallery_img2_big.jpg" class="photo wide" data-fancybox="photo_gallery">
+								<img src="images/photo_gallery_img2.jpg" alt="" loading="lazy" decoding="async" class="cover">
+							</a>
+
+							<a href="images/photo_gallery_img3_big.jpg" class="photo quarter" data-fancybox="photo_gallery">
+								<img src="images/photo_gallery_img3.jpg" alt="" loading="lazy" decoding="async" class="cover">
+							</a>
+
+							<a href="images/photo_gallery_img4_big.jpg" class="photo quarter wide" data-fancybox="photo_gallery">
+								<img src="images/photo_gallery_img4.jpg" alt="" loading="lazy" decoding="async" class="cover">
+							</a>
+
+							<a href="images/photo_gallery_img5_big.jpg" class="photo quarter" data-fancybox="photo_gallery">
+								<img src="images/photo_gallery_img5.jpg" alt="" loading="lazy" decoding="async" class="cover">
+							</a>
+
+							<a href="images/photo_gallery_img6_big.jpg" class="photo wide" data-fancybox="photo_gallery">
+								<img src="images/photo_gallery_img6.jpg" alt="" loading="lazy" decoding="async" class="cover">
+							</a>
+
+							<a href="images/photo_gallery_img7_big.jpg" class="photo" data-fancybox="photo_gallery">
+								<img src="images/photo_gallery_img7.jpg" alt="" loading="lazy" decoding="async" class="cover">
+							</a>
+						</div>
+					</div>
+				</section>
+			</div>
+
+
+			<footer>
+				<div class="cont">
+					<div class="phone">
+						<div class="label">Контактный телефон</div>
+
+						<a href="tel:+79830001116">+7 983 000 111 6</a>
+					</div>
+
+					<div class="site">
+						<div class="label">сайт проекта</div>
+
+						<a href="https://rvcouch.ru/" target="_blank" rel="noopener nofollow">RVCouch.ru</a>
+					</div>
+
+					<div class="copyright">
+						<p>&copy; 2006 - 2026, ИП Винилов</p>
+
+						<p>ОГРНИП 315547600093570, ИНН 540301768363</p>
+					</div>
+
+					<div class="messengers">
+						<div class="label">Или напишите нам в мессенджеры →</div>
+
+						<div class="links">
+							<a href="/" target="_blank" class="vk" rel="noopener nofollow">
+								<img src="images/ic_vk.svg" alt="">
+							</a>
+
+							<a href="/" target="_blank" class="dzen" rel="noopener nofollow">
+								<img src="images/ic_dzen.svg" alt="">
+							</a>
+
+							<a href="/" target="_blank" class="tg" rel="noopener nofollow">
+								<img src="images/ic_telegram.svg" alt="">
+							</a>
+
+							<a href="/" target="_blank" class="youtube" rel="noopener nofollow">
+								<img src="images/ic_youtube.svg" alt="">
+							</a>
+						</div>
+					</div>
+
+					<div class="age">Отношения и кризис. Возрастные ограничения <span>18+</span></div>
+
+					<nav class="menu">
+						<a href="/">Политика конфиденциальности</a>
+
+						<a href="/">Согласие с рассылкой</a>
+
+						<a href="/">Отказ от ответственности</a>
+
+						<a href="/">Политика возврата</a>
+
+						<a href="/">Оферта</a>
+					</nav>
+
+					<div class="company">Roman Vinilov Incorporated</div>
+				</div>
+			</footer>
+
+
+			<div class="overlay"></div>
+		</div>
+
+
+		<dialog class="modal" id="city_modal">
+			<div class="wrapper">
+				<div class="inner">
+					<button type="button" class="close_btn" data-close-modal>
+						<svg class="icon"><use href="images/sprite.svg#ic_close"></use></svg>
+					</button>
+
+					<div class="modal_title">Выберите ваш город:</div>
+
+					<div class="cities">
+						<button type="button">Москва</button>
+
+						<button type="button">Санкт-Петербург</button>
+
+						<button type="button">Новосибирск</button>
+
+						<button type="button">Екатеринбург</button>
+
+						<button type="button">Омск</button>
+
+						<button type="button">Красноярск</button>
+
+						<button type="button">Сочи</button>
+
+						<button type="button">Гамбург</button>
+
+						<button type="button">Белек</button>
+
+						<button type="button">Хельсинки</button>
+
+						<button type="button">Алматы</button>
+
+						<button type="button">Дубаи, ОАЭ</button>
+
+						<button type="button">Тайланд</button>
+					</div>
+				</div>
+			</div>
+		</dialog>
+
+
+		<dialog class="modal form_modal" id="request_modal">
+			<div class="wrapper">
+				<div class="inner">
+					<button type="button" class="close_btn" data-close-modal aria-label="Закрыть">
+						<svg class="icon"><use href="images/sprite.svg#ic_close"></use></svg>
+					</button>
+
+					<div class="modal_title">Заполните все поля</div>
+
+					<form action="" class="form">
+						<input type="text" name="name" class="input" placeholder="Имя" required>
+
+						<input type="tel" name="phone" class="input" placeholder="+7" required>
+
+						<input type="text" name="telegram" class="input" placeholder="Ник в Telegram" required>
+
+						<textarea name="story" placeholder="Ваша история" required></textarea>
+
+						<label class="checkbox agree">
+							<input type="checkbox" name="agree" required>
+
+							<div class="check">
+								<svg class="icon"><use href="images/sprite.svg#ic_check"></use></svg>
+							</div>
+
+							<span>Политика конфиденциальности</span>
+						</label>
+
+						<div class="captcha">
+							<label class="checkbox">
+								<input type="checkbox" name="captcha">
+
+								<div class="check">
+									<svg class="icon"><use href="images/sprite.svg#ic_check"></use></svg>
+								</div>
+
+								<span><b>Я не робот</b><br> Нажмите, чтобы продолжить</span>
+							</label>
+						</div>
+
+						<button type="submit" class="submit_btn">
+							<span>Оставить заявку</span>
+						</button>
+					</form>
+				</div>
+			</div>
+		</dialog>
+
+
+		<!-- Connecting javascript files -->
+		<script src="js/functions.js"></script>
+		<script src="js/swiper-bundle.min.js"></script>
+		<script src="js/fancybox.js"></script>
+		<script src="js/fancybox.ru_RU.js"></script>
+		<script src="js/maska.min.js"></script>
+		<script src="js/scripts.js"></script>
+	</body>
+</html>

@@ -607,6 +607,255 @@
 
 
 
+    /*---------------
+        Page head
+    ---------------*/
+    .page_head
+    {
+        margin-top: var(--inner_gap_xs);
+    }
+
+
+
+    /*-----------
+        Quote
+    -----------*/
+    .quote
+    {
+        .cont
+        {
+            align-items: flex-start;
+
+            --gap: var(--inner_gap_s);
+            --image_size: 80px;
+        }
+
+
+        .data
+        {
+            gap: var(--inner_gap_s);
+
+            padding-top: 0;
+
+
+            &::before
+            {
+                left: var(--block_padding);
+            }
+        }
+
+
+        .text
+        {
+            font-size: var(--font_size);
+        }
+
+
+        .author
+        {
+            font-size: var(--font_size);
+        }
+    }
+
+
+
+    /*--------------
+        Products
+    --------------*/
+    .products
+    {
+        .tabs
+        {
+            gap: var(--inner_gap);
+        }
+
+
+        .grid_row
+        {
+            --items_per_line: 1;
+        }
+
+
+        .product
+        {
+            .btn
+            {
+                width: 100%;
+            }
+        }
+
+
+        .all_btn
+        {
+            width: 100%;
+            margin-top: var(--outside_gap);
+        }
+    }
+
+
+
+    /*----------
+        Team
+    ----------*/
+    .team
+    {
+        .expert
+        {
+            .image
+            {
+                width: 100%;
+
+                aspect-ratio: 1 / 1.327;
+            }
+
+
+            .name
+            {
+                font-size: var(--font_size_title_xs);
+            }
+        }
+
+
+        .grid_row
+        {
+            --items_per_line: 1;
+            --gap_y: var(--block_padding_s);
+        }
+    }
+
+
+
+    /*-------------------
+        Photo gallery
+    -------------------*/
+    .photo_gallery
+    {
+        .grid_row
+        {
+            overflow-x: auto;
+            flex-wrap: nowrap;
+
+            padding-inline: var(--cont_padding);
+
+            scroll-padding-inline: var(--cont_padding);
+            scroll-snap-type: x proximity;
+            scrollbar-width: none;
+
+
+            &::-webkit-scrollbar
+            {
+                display: none;
+            }
+        }
+
+
+        .photo
+        {
+            flex-shrink: 0;
+
+            width: 199px;
+            height: 203px;
+
+            scroll-snap-align: start;
+            aspect-ratio: auto;
+
+
+            &.wide
+            {
+                width: 421px;
+            }
+
+
+            &.quarter
+            {
+                width: 145px;
+
+                aspect-ratio: auto;
+
+
+                &.wide
+                {
+                    width: 311px;
+                }
+            }
+        }
+    }
+
+
+
+    /*-------------------
+        Contacts info
+    -------------------*/
+    .contacts_info
+    {
+        .image
+        {
+            width: calc(100% + var(--cont_padding_double));
+            max-width: none;
+            margin-inline: calc(var(--cont_padding) * -1);
+        }
+
+
+        .notice
+        {
+            gap: var(--inner_gap);
+
+            width: calc(100% + var(--cont_padding_double));
+            margin-inline: calc(var(--cont_padding) * -1);
+
+
+            .links
+            {
+                gap: var(--block_padding_s);
+
+                margin-top: var(--inner_gap);
+            }
+        }
+    }
+
+
+
+    /*-------------------
+        About project
+    -------------------*/
+    .about_project
+    {
+        .info
+        {
+            gap: var(--inner_gap);
+        }
+
+
+        .lead
+        {
+            font-size: var(--font_size_l);
+        }
+
+
+        .form
+        {
+            width: calc(100% + var(--cont_padding_double));
+            max-width: none;
+            margin-inline: calc(var(--cont_padding) * -1);
+            padding-inline: var(--cont_padding);
+
+
+            .title
+            {
+                font-size: var(--font_size_xl);
+            }
+
+
+            .input,
+            textarea
+            {
+                font-size: var(--font_size);
+            }
+        }
+    }
+
+
+
     /*------------
         Footer
     ------------*/

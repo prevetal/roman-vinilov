@@ -676,6 +676,150 @@
 
 
 
+    /*----------
+        Team
+    ----------*/
+    .team
+    {
+        .experts
+        {
+            gap: var(--outside_gap);
+        }
+
+
+        .expert
+        {
+            flex-direction: column;
+
+
+            .info
+            {
+                width: 100%;
+            }
+        }
+
+
+        .grid_row
+        {
+            --items_per_line: 2;
+            --gap_y: var(--block_padding);
+        }
+
+
+        .person
+        {
+            .info
+            {
+                padding-block: var(--inner_gap);
+            }
+
+
+            .post
+            {
+                font-size: var(--font_size);
+            }
+        }
+    }
+
+
+
+    /*-------------------
+        Photo gallery
+    -------------------*/
+    .photo_gallery
+    {
+        .cont
+        {
+            padding-inline: 0;
+        }
+    }
+
+
+
+    /*-------------------
+        Contacts info
+    -------------------*/
+    .contacts_info
+    {
+        .cont
+        {
+            align-items: center;
+            flex-direction: column;
+            flex-wrap: nowrap;
+        }
+
+
+        .list
+        {
+            gap: var(--block_padding_s);
+
+            width: 100%;
+
+            font-size: var(--font_size_xl);
+        }
+
+
+        .image
+        {
+            width: 554px;
+            max-width: 100%;
+            margin-top: var(--outside_gap);
+        }
+    }
+
+
+
+    /*-------------------
+        About project
+    -------------------*/
+    .about_project
+    {
+        .cont
+        {
+            align-items: center;
+            flex-direction: column;
+            flex-wrap: nowrap;
+            gap: var(--block_padding);
+        }
+
+
+        .block_head
+        {
+            margin-bottom: 0;
+        }
+
+
+        .info
+        {
+            width: 100%;
+        }
+
+
+        .form
+        {
+            width: 554px;
+            max-width: 100%;
+            padding: var(--block_padding_l);
+        }
+    }
+
+
+
+    /*-------------
+        Socials
+    -------------*/
+    .socials
+    {
+        .links
+        {
+            flex-direction: column;
+            flex-wrap: nowrap;
+            gap: var(--block_padding_s);
+        }
+    }
+
+
+
     /*------------
         Footer
     ------------*/
@@ -703,6 +847,119 @@
         {
             justify-content: flex-start;
             gap: var(--inner_gap_xs) var(--block_padding_s);
+        }
+    }
+
+
+
+    /*---------------
+        Page head
+    ---------------*/
+    .page_head
+    {
+        padding-bottom: var(--inner_gap_l);
+    }
+
+
+
+    /*-----------
+        Quote
+    -----------*/
+    .quote
+    {
+        .cont
+        {
+            --gap: var(--inner_gap_l);
+            --image_size: 150px;
+        }
+
+
+        .data
+        {
+            &::before
+            {
+                left: var(--inner_gap);
+            }
+        }
+
+
+        .text
+        {
+            font-size: var(--font_size_l);
+        }
+
+
+        .author
+        {
+            font-size: var(--font_size_xl);
+        }
+    }
+
+
+
+    /*--------------
+        Products
+    --------------*/
+    .products
+    {
+        .tabs
+        {
+            gap: var(--block_padding_s) var(--inner_gap);
+
+
+            .btn
+            {
+                font-size: var(--font_size);
+            }
+        }
+
+
+        .grid_row
+        {
+            --items_per_line: 2;
+        }
+
+
+        .product
+        {
+            .name
+            {
+                font-size: var(--font_size_xl);
+            }
+
+
+            .info
+            {
+                font-size: var(--font_size);
+            }
+
+
+            .desc
+            {
+                margin-bottom: var(--inner_gap);
+            }
+
+
+            .price
+            {
+                margin-top: var(--inner_gap);
+            }
+
+
+            .btn
+            {
+                margin-top: var(--block_padding_s);
+            }
+
+
+            &.product_book,
+            &.product_course
+            {
+                .desc
+                {
+                    margin-bottom: var(--block_padding_s);
+                }
+            }
         }
     }
 }

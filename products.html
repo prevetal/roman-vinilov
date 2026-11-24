@@ -1,0 +1,731 @@
+<!DOCTYPE html>
+<html lang="ru">
+	<head>
+		<meta charset="utf-8">
+
+		<!-- Adapting the page for mobile devices -->
+		<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+
+		<!-- Prohibition of phone number recognition -->
+		<meta name="format-detection" content="telephone=no">
+
+		<!-- Page title -->
+		<title>Заголовок страницы</title>
+
+		<!-- Meta description -->
+		<meta name="description" content="">
+
+		<!-- Meta Keywords -->
+		<meta name="keywords" content="">
+
+		<!-- Site icon, size 32x32, transparency supported. Recommended format: .ico or .png -->
+		<link rel="shortcut icon" href="favicon.ico">
+
+		<!-- Changing the color of the mobile browser panel -->
+		<meta name="msapplication-TileColor" content="#333333">
+		<meta name="theme-color" content="#333333">
+
+		<!-- Preloading the main font -->
+		<link rel="preload" href="fonts/FuturaPT-Book.woff2" as="font" type="font/woff2" crossorigin>
+		<link rel="preload" href="fonts/FuturaPT-Demi.woff2" as="font" type="font/woff2" crossorigin>
+
+		<!-- Connecting style files -->
+		<link rel="stylesheet" href="css/reset.css">
+		<link rel="stylesheet" href="css/swiper-bundle.min.css">
+		<link rel="stylesheet" href="css/swiper.css">
+		<link rel="stylesheet" href="css/fancybox.css">
+		<link rel="stylesheet" href="css/styles.css">
+		<link rel="stylesheet" href="css/fonts.css">
+
+		<link rel="stylesheet" href="css/response_1279.css" media="print, (max-width: 1279px)">
+		<link rel="stylesheet" href="css/response_1023.css" media="print, (max-width: 1023px)">
+		<link rel="stylesheet" href="css/response_767.css" media="print, (max-width: 767px)">
+	</head>
+
+	<body>
+		<div class="wrap">
+			<div class="main">
+				<section class="top_banner">
+					<div class="cont">
+						<div class="title">Диагностика Вашей ситуации: узнай, что делать!</div>
+
+						<button class="btn">
+							<span>пройти тест!</span>
+						</button>
+					</div>
+				</section>
+
+				<header>
+					<button type="button" class="close_btn" aria-label="Закрыть меню">
+						<svg class="icon"><use href="images/sprite.svg#ic_close"></use></svg>
+					</button>
+
+					<div class="top">
+						<div class="cont">
+							<div class="logo">
+								<img src="images/logo.png" alt="">
+
+								<span>Центр романа<br> винилова</span>
+							</div>
+
+							<button type="button" class="city_btn" data-open-modal="city_modal">
+								<span>Выбери город</span>
+
+								<svg class="icon"><use xlink:href="images/sprite.svg#ic_arr_ver"></use></svg>
+							</button>
+
+							<div class="phone">
+								<a href="tel:+7 (983) 000 111 6">+7 (983) 000 111 6</a>
+							</div>
+
+							<button class="callback_btn">
+								<span>Перезвоните мне</span>
+
+								<svg class="icon"><use xlink:href="images/sprite.svg#ic_phone"></use></svg>
+							</button>
+						</div>
+					</div>
+
+					<div class="bottom">
+						<div class="cont">
+							<nav class="menu">
+								<div class="item">
+									<a href="/" class="primary">Консультация</a>
+								</div>
+
+								<div class="item">
+									<a href="/" class="primary">Premium доступ</a>
+								</div>
+
+								<div class="item">
+									<a href="/">Продукты</a>
+								</div>
+
+								<div class="item">
+									<a href="/">Обучение</a>
+								</div>
+
+								<div class="item">
+									<a href="/">Отзывы</a>
+								</div>
+
+								<div class="item">
+									<a href="/">Команда</a>
+								</div>
+
+								<div class="item">
+									<a href="/">Расписание</a>
+								</div>
+
+								<div class="item">
+									<a href="/">Материалы</a>
+								</div>
+
+								<div class="item">
+									<a href="/">Контакты</a>
+								</div>
+							</nav>
+						</div>
+					</div>
+				</header>
+
+
+				<section class="mob_header">
+					<div class="cont">
+						<div class="logo">
+							<img src="images/logo.png" alt="">
+
+							<span>Центр романа<br> винилова</span>
+						</div>
+
+						<button type="button" class="city_btn" data-open-modal="city_modal">
+							<span>Выбери город</span>
+
+							<svg class="icon"><use href="images/sprite.svg#ic_arr_ver"></use></svg>
+						</button>
+
+						<button type="button" class="mob_menu_btn" aria-label="Меню">
+							<span></span>
+						</button>
+					</div>
+				</section>
+
+
+				<section class="page_head">
+					<div class="cont">
+						<div class="breadcrumbs">
+							<a href="/">
+								<svg class="icon"><use href="images/sprite.svg#ic_home"></use></svg>
+
+								<span>Главная</span>
+							</a>
+
+							<svg class="sep"><use href="images/sprite.svg#ic_sep"></use></svg>
+
+							<span class="current">Продукты</span>
+						</div>
+					</div>
+				</section>
+
+
+				<section class="quote block">
+					<div class="cont">
+						<picture class="image">
+							<img src="images/quote_img.jpg" alt="" decoding="async" fetchpriority="high" class="cover">
+						</picture>
+
+						<div class="data">
+							<div class="text">
+								<p>Лучший учитель — обратная связь по всем твоим событиям, ошибкам и действиям.</p>
+
+								<p>Не важно, что ты сделал. Важно, какие выводы ты получил</p>
+							</div>
+
+							<div class="author">Роман Винилов</div>
+						</div>
+					</div>
+				</section>
+
+
+				<section class="products block l_m tabs_container">
+					<div class="cont">
+						<div class="block_head centered">
+							<h1 class="title">Каталог продуктов</h1>
+						</div>
+
+						<div class="tabs">
+							<button type="button" class="btn active" aria-controls="products_tab1" aria-selected="true" data-level="level1">Авторские вебинары</button>
+
+							<button type="button" class="btn" aria-controls="products_tab2" aria-selected="false" tabindex="-1" data-level="level1">Книги Романа Винилова</button>
+
+							<button type="button" class="btn" aria-controls="products_tab3" aria-selected="false" tabindex="-1" data-level="level1">Авторские курсы</button>
+						</div>
+
+						<div class="tab_content level1 active" id="products_tab1" role="tabpanel">
+							<div class="grid_row">
+								<div class="product">
+									<div class="top">
+										<picture class="image">
+											<img src="images/product_img1.jpg" alt="" loading="lazy" decoding="async" class="cover">
+										</picture>
+
+										<div class="name">Почему отношения закончились. Как пережить расставание?</div>
+									</div>
+
+									<div class="info">
+										<div class="desc">
+											<p>Электронная версия для любого гаджета</p>
+
+											<p>Продолжительность: 200 мин.</p>
+										</div>
+
+										<a href="/" class="program">Программа вебинара →</a>
+
+										<div class="price">2 000 ₽</div>
+
+										<button type="button" class="btn">
+											<span>Заказать</span>
+										</button>
+									</div>
+								</div>
+
+								<div class="product">
+									<div class="top">
+										<picture class="image">
+											<img src="images/product_img2.jpg" alt="" loading="lazy" decoding="async" class="cover">
+										</picture>
+
+										<div class="name">Мужчина и женщины. Стратегии взаимодействия</div>
+									</div>
+
+									<div class="info">
+										<div class="desc">
+											<p>Электронная версия для любого гаджета</p>
+
+											<p>Продолжительность: 270 мин.</p>
+										</div>
+
+										<a href="/" class="program">Программа вебинара →</a>
+
+										<div class="price">4 000 ₽</div>
+
+										<button type="button" class="btn">
+											<span>Заказать</span>
+										</button>
+									</div>
+								</div>
+
+								<div class="product">
+									<div class="top">
+										<picture class="image">
+											<img src="images/product_img3.jpg" alt="" loading="lazy" decoding="async" class="cover">
+										</picture>
+
+										<div class="name">Поиск девушки для отношений. Стратегия для создания крепкой и счастливой семьи</div>
+									</div>
+
+									<div class="info">
+										<div class="desc">
+											<p>Электронная версия для любого гаджета</p>
+										</div>
+
+										<a href="/" class="program">Программа вебинара →</a>
+
+										<div class="price">4 000 ₽</div>
+
+										<button type="button" class="btn">
+											<span>Заказать</span>
+										</button>
+									</div>
+								</div>
+							</div>
+
+							<button type="button" class="all_btn">
+								<span>Купить все вебинары со скидкой</span>
+							</button>
+						</div>
+
+						<div class="tab_content level1" id="products_tab2" role="tabpanel">
+							<div class="grid_row">
+								<div class="product product_book">
+									<div class="top">
+										<picture class="image">
+											<img src="images/product_book_img1.jpg" alt="" loading="lazy" decoding="async" class="cover">
+										</picture>
+
+										<div class="name">Восстановление отношений. От А до Я</div>
+									</div>
+
+									<div class="info">
+										<div class="desc">
+											<p>Формат: pdf</p>
+										</div>
+
+										<a href="/" class="btn">
+											<span>Подробнее</span>
+										</a>
+									</div>
+								</div>
+
+								<div class="product product_book">
+									<div class="top">
+										<picture class="image">
+											<img src="images/product_book_img2.jpg" alt="" loading="lazy" decoding="async" class="cover">
+										</picture>
+
+										<div class="name">ДВОЕ. Жизнь после секса</div>
+									</div>
+
+									<div class="info">
+										<div class="desc">
+											<p>Формат: pdf</p>
+										</div>
+
+										<a href="/" class="btn">
+											<span>Подробнее</span>
+										</a>
+									</div>
+								</div>
+
+								<div class="product product_book">
+									<div class="top">
+										<picture class="image">
+											<img src="images/product_book_img3.jpg" alt="" loading="lazy" decoding="async" class="cover">
+										</picture>
+
+										<div class="name">#БытьМужчиной. Закаляя характер (ОДИН)</div>
+									</div>
+
+									<div class="info">
+										<div class="desc">
+											<p>Формат: pdf</p>
+										</div>
+
+										<a href="/" class="btn">
+											<span>Подробнее</span>
+										</a>
+									</div>
+								</div>
+
+								<div class="product product_book">
+									<div class="top">
+										<picture class="image">
+											<img src="images/product_book_img4.jpg" alt="" loading="lazy" decoding="async" class="cover">
+										</picture>
+
+										<div class="name">Как вернуть бывшую девушку или жену? Первые шаги</div>
+									</div>
+
+									<div class="info">
+										<div class="desc">
+											<p>Формат: pdf</p>
+										</div>
+
+										<a href="/" class="btn">
+											<span>Подробнее</span>
+										</a>
+									</div>
+								</div>
+
+								<div class="product product_book">
+									<div class="top">
+										<picture class="image">
+											<img src="images/product_book_img5.jpg" alt="" loading="lazy" decoding="async" class="cover">
+										</picture>
+
+										<div class="name">#БытьМужчиной: Первые шаги</div>
+									</div>
+
+									<div class="info">
+										<div class="desc">
+											<p>Формат: pdf</p>
+										</div>
+
+										<a href="/" class="btn">
+											<span>Подробнее</span>
+										</a>
+									</div>
+								</div>
+
+								<div class="product product_book">
+									<div class="top">
+										<picture class="image">
+											<img src="images/product_book_img6.jpg" alt="" loading="lazy" decoding="async" class="cover">
+										</picture>
+
+										<div class="name">#БытьМужчиной: Пошаговая инструкция развития</div>
+									</div>
+
+									<div class="info">
+										<div class="desc">
+											<p>Формат: pdf</p>
+										</div>
+
+										<a href="/" class="btn">
+											<span>Подробнее</span>
+										</a>
+									</div>
+								</div>
+
+								<div class="product product_book">
+									<div class="top">
+										<picture class="image">
+											<img src="images/product_book_img7.jpg" alt="" loading="lazy" decoding="async" class="cover">
+										</picture>
+
+										<div class="name">Простые шаги к регулярному сексу</div>
+									</div>
+
+									<div class="info">
+										<div class="desc">
+											<p>Формат: pdf</p>
+										</div>
+
+										<a href="/" class="btn">
+											<span>Подробнее</span>
+										</a>
+									</div>
+								</div>
+
+								<div class="product product_book">
+									<div class="top">
+										<picture class="image">
+											<img src="images/product_book_img8.jpg" alt="" loading="lazy" decoding="async" class="cover">
+										</picture>
+
+										<div class="name">10 секретов привлекательности в жизни и отношениях</div>
+									</div>
+
+									<div class="info">
+										<div class="desc">
+											<p>Формат: pdf</p>
+										</div>
+
+										<a href="/" class="btn">
+											<span>Подробнее</span>
+										</a>
+									</div>
+								</div>
+
+								<div class="product product_book">
+									<div class="top">
+										<picture class="image">
+											<img src="images/product_book_img9.jpg" alt="" loading="lazy" decoding="async" class="cover">
+										</picture>
+
+										<div class="name">Как вернуть бывшую девушку? Пошаговая инструкция</div>
+									</div>
+
+									<div class="info">
+										<div class="desc">
+											<p>Формат: pdf</p>
+										</div>
+
+										<button type="button" class="btn" disabled>
+											<span>Не продается</span>
+										</button>
+									</div>
+								</div>
+							</div>
+
+							<button type="button" class="all_btn">
+								<span>Купить все книги со скидкой</span>
+							</button>
+						</div>
+
+						<div class="tab_content level1" id="products_tab3" role="tabpanel">
+							<div class="grid_row">
+								<div class="product product_course">
+									<div class="top">
+										<picture class="image">
+											<img src="images/product_course_img1.jpg" alt="" loading="lazy" decoding="async" class="cover">
+										</picture>
+
+										<div class="name">Курс "Как вернуть бывшую жену"</div>
+									</div>
+
+									<div class="info">
+										<div class="desc">
+											<p>Электронная версия для любого гаджета</p>
+										</div>
+
+										<a href="/" class="btn">
+											<span>Подробнее</span>
+										</a>
+									</div>
+								</div>
+
+								<div class="product product_course">
+									<div class="top">
+										<picture class="image">
+											<img src="images/product_course_img2.jpg" alt="" loading="lazy" decoding="async" class="cover">
+										</picture>
+
+										<div class="name">Курс "От слов к возврату: как общаться с бывшей"</div>
+									</div>
+
+									<div class="info">
+										<div class="desc">
+											<p>Электронная версия для любого гаджета</p>
+										</div>
+
+										<a href="/" class="btn">
+											<span>Подробнее</span>
+										</a>
+									</div>
+								</div>
+
+								<div class="product product_course">
+									<div class="top">
+										<picture class="image">
+											<img src="images/product_course_img3.jpg" alt="" loading="lazy" decoding="async" class="cover">
+										</picture>
+
+										<div class="name">Курс "Как вернуть бывшую девушку во что бы то ни стало"</div>
+									</div>
+
+									<div class="info">
+										<div class="desc">
+											<p>Электронная версия для любого гаджета</p>
+										</div>
+
+										<a href="/" class="btn">
+											<span>Подробнее</span>
+										</a>
+									</div>
+								</div>
+
+								<div class="product product_course">
+									<div class="top">
+										<picture class="image">
+											<img src="images/product_course_img4.jpg" alt="" loading="lazy" decoding="async" class="cover">
+										</picture>
+
+										<div class="name">Курс "Как забыть бывшую и пережить расставание с ней"</div>
+									</div>
+
+									<div class="info">
+										<div class="desc">
+											<p>Электронная версия для любого гаджета</p>
+										</div>
+
+										<a href="/" class="btn">
+											<span>Подробнее</span>
+										</a>
+									</div>
+								</div>
+							</div>
+
+							<button type="button" class="all_btn">
+								<span>Купить все курсы со скидкой</span>
+							</button>
+						</div>
+					</div>
+				</section>
+			</div>
+
+
+			<footer>
+				<div class="cont">
+					<div class="phone">
+						<div class="label">Контактный телефон</div>
+
+						<a href="tel:+79830001116">+7 983 000 111 6</a>
+					</div>
+
+					<div class="site">
+						<div class="label">сайт проекта</div>
+
+						<a href="https://rvcouch.ru/" target="_blank" rel="noopener nofollow">RVCouch.ru</a>
+					</div>
+
+					<div class="copyright">
+						<p>&copy; 2006 - 2026, ИП Винилов</p>
+
+						<p>ОГРНИП 315547600093570, ИНН 540301768363</p>
+					</div>
+
+					<div class="messengers">
+						<div class="label">Или напишите нам в мессенджеры →</div>
+
+						<div class="links">
+							<a href="/" target="_blank" class="vk" rel="noopener nofollow">
+								<img src="images/ic_vk.svg" alt="">
+							</a>
+
+							<a href="/" target="_blank" class="dzen" rel="noopener nofollow">
+								<img src="images/ic_dzen.svg" alt="">
+							</a>
+
+							<a href="/" target="_blank" class="tg" rel="noopener nofollow">
+								<img src="images/ic_telegram.svg" alt="">
+							</a>
+
+							<a href="/" target="_blank" class="youtube" rel="noopener nofollow">
+								<img src="images/ic_youtube.svg" alt="">
+							</a>
+						</div>
+					</div>
+
+					<div class="age">Отношения и кризис. Возрастные ограничения <span>18+</span></div>
+
+					<nav class="menu">
+						<a href="/">Политика конфиденциальности</a>
+
+						<a href="/">Согласие с рассылкой</a>
+
+						<a href="/">Отказ от ответственности</a>
+
+						<a href="/">Политика возврата</a>
+
+						<a href="/">Оферта</a>
+					</nav>
+
+					<div class="company">Roman Vinilov Incorporated</div>
+				</div>
+			</footer>
+
+
+			<div class="overlay"></div>
+		</div>
+
+
+		<dialog class="modal" id="city_modal">
+			<div class="wrapper">
+				<div class="inner">
+					<button type="button" class="close_btn" data-close-modal>
+						<svg class="icon"><use href="images/sprite.svg#ic_close"></use></svg>
+					</button>
+
+					<div class="modal_title">Выберите ваш город:</div>
+
+					<div class="cities">
+						<button type="button">Москва</button>
+
+						<button type="button">Санкт-Петербург</button>
+
+						<button type="button">Новосибирск</button>
+
+						<button type="button">Екатеринбург</button>
+
+						<button type="button">Омск</button>
+
+						<button type="button">Красноярск</button>
+
+						<button type="button">Сочи</button>
+
+						<button type="button">Гамбург</button>
+
+						<button type="button">Белек</button>
+
+						<button type="button">Хельсинки</button>
+
+						<button type="button">Алматы</button>
+
+						<button type="button">Дубаи, ОАЭ</button>
+
+						<button type="button">Тайланд</button>
+					</div>
+				</div>
+			</div>
+		</dialog>
+
+
+		<dialog class="modal form_modal" id="request_modal">
+			<div class="wrapper">
+				<div class="inner">
+					<button type="button" class="close_btn" data-close-modal aria-label="Закрыть">
+						<svg class="icon"><use href="images/sprite.svg#ic_close"></use></svg>
+					</button>
+
+					<div class="modal_title">Заполните все поля</div>
+
+					<form action="" class="form">
+						<input type="text" name="name" class="input" placeholder="Имя" required>
+
+						<input type="tel" name="phone" class="input" placeholder="+7" required>
+
+						<input type="text" name="telegram" class="input" placeholder="Ник в Telegram" required>
+
+						<textarea name="story" placeholder="Ваша история" required></textarea>
+
+						<label class="checkbox agree">
+							<input type="checkbox" name="agree" required>
+
+							<div class="check">
+								<svg class="icon"><use href="images/sprite.svg#ic_check"></use></svg>
+							</div>
+
+							<span>Политика конфиденциальности</span>
+						</label>
+
+						<div class="captcha">
+							<label class="checkbox">
+								<input type="checkbox" name="captcha">
+
+								<div class="check">
+									<svg class="icon"><use href="images/sprite.svg#ic_check"></use></svg>
+								</div>
+
+								<span><b>Я не робот</b><br> Нажмите, чтобы продолжить</span>
+							</label>
+						</div>
+
+						<button type="submit" class="submit_btn">
+							<span>Оставить заявку</span>
+						</button>
+					</form>
+				</div>
+			</div>
+		</dialog>
+
+
+		<!-- Connecting javascript files -->
+		<script src="js/functions.js"></script>
+		<script src="js/swiper-bundle.min.js"></script>
+		<script src="js/fancybox.js"></script>
+		<script src="js/fancybox.ru_RU.js"></script>
+		<script src="js/maska.min.js"></script>
+		<script src="js/scripts.js"></script>
+	</body>
+</html>
